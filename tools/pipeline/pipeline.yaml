@@ -22,7 +22,8 @@ stages:
         inputs:
           targetType: 'inline'
           script: |
-            echo $(Password)
+            echo $Password
+            echo $(ApiUsers.SupplierFiiT.Password)
         env:
             Password: $(ApiUsers.SupplierFiiT.Password)
        
