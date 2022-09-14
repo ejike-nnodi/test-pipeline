@@ -24,11 +24,8 @@ stages:
           script: |
             echo $Password
             echo $(ApiUsers.SupplierFiiT.Password)
-            ciao=$(ApiUsers.SupplierFiiT.Password)
-            echo $ciao
-            ciao="$(ApiUsers.SupplierFiiT.Password)"
-            echo $ciao
-            echo $(AZURE_KEY_VAULT)
+            echo $(ApiUsers.TggApi.Password)
+            echo $(DATABASE_SERVER_PASSWORD)
             echo $(AzureAppConfiguration.ConnectionString)
         env:
             Password: $(ApiUsers.SupplierFiiT.Password)
